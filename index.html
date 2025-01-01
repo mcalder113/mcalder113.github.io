@@ -7,9 +7,74 @@
 </head>
 <body>
 
-  <h1>Welcome to My Website!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dignissim fermentum magna nec vehicula. Nullam lobortis mauris sed odio aliquet, in volutpat elit mollis. Sed commodo consectetur sem, nec varius mauris ultricies et. Integer malesuada, mauris sed fermentum ultricies, magna arcu sodales justo, sed facilisis eros magna ut mi. Phasellus ac eleifend nisi. Aenean et turpis eu nunc consequat lobortis. Vivamus malesuada velit nec velit commodo, non dapibus turpis bibendum.</p>
+  <h1>Cowrie Honeypot Project: Insights into Malicious Activity</h1>
+<p>
+Welcome to my blog documenting the journey of setting up and analyzing a Cowrie honeypot. This project is an exploration of attacker behaviors and tactics, leveraging Cowrie's capabilities to provide valuable insights into the ever-evolving world of cybersecurity threats.
 
+## Why a Honeypot?
+
+Honeypots are a vital tool in cybersecurity research and defense. By simulating vulnerable systems, they attract malicious actors, providing us with invaluable data about their methods, tools, and goals. For this project, I chose **Cowrie**, a robust and widely-used honeypot designed to emulate an SSH and Telnet service.
+
+## Deployment Environment
+
+The honeypot is deployed on a **DigitalOcean droplet**, a cost-effective and scalable cloud platform. The setup involves:
+
+- **Operating System**: Ubuntu 22.04 LTS.
+- **Cowrie Version**: The latest stable release.
+- **Monitoring and Logging Tools**: Integration with Graylog for log analysis and visualization.
+
+This environment was selected for its simplicity and reliability, allowing me to focus on the data collection and analysis aspects of the project.
+
+## Data Collected
+
+Since deploying the honeypot, it has captured a wealth of information from malicious actors attempting to compromise the system. Key highlights include:
+
+1. **TTY Session Logs**:
+   - Detailed command execution logs of attackers interacting with the honeypot.
+   - Insights into the tools and techniques used by adversaries.
+
+2. **Log Files**:
+   - Comprehensive logs tracking connection attempts, login attempts, and session data.
+   - Analysis of commonly used credentials and attack patterns.
+
+3. **Malware Samples**:
+   - Downloaded files and payloads attackers attempted to deploy.
+   - These samples are safely stored for further analysis in a controlled environment.
+
+## Key Observations So Far
+
+The data collected has already revealed some fascinating patterns:
+
+- **Brute Force Credentials**:
+  The majority of login attempts involve default or weak credentials such as `admin:admin` or `root:password`.
+
+- **Geographic Trends**:
+  Most attacks originate from specific regions, with some IP addresses attempting repeated access.
+
+- **Malware Payloads**:
+  Several attackers have attempted to deploy known malware variants, including botnet scripts and cryptocurrency miners.
+
+## Next Steps
+
+In the coming weeks, I plan to:
+
+1. **Analyze Malware Samples**:
+   Perform static and dynamic analysis to understand the functionality of collected payloads.
+
+2. **Enhance Visualizations**:
+   Integrate GeoIP data and create detailed dashboards using Graylog.
+
+3. **Share Findings**:
+   Publish detailed posts on specific trends and techniques observed during the analysis.
+
+## Conclusion
+
+This Cowrie honeypot project has been an eye-opening experience, offering a front-row seat to the tactics and techniques of malicious actors. By documenting and sharing this journey, I hope to contribute to the broader cybersecurity community, enhancing our collective understanding of these threats.
+
+Stay tuned for future updates and deep dives into the data! Feel free to reach out or leave a comment if you have questions or suggestions.
+
+
+</p>
 </body>
 </html>
 
