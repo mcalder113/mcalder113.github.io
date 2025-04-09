@@ -15,3 +15,4 @@ I am very pleased to announce I was accepted to join as a member on the [Technol
 
 - Consumer as a Product
 - IJAS Region 6 Science Fair - Wheeling, IL
+- Skokie Spring Greening 2025 [More info](https://skokiespringgreening.info/)
